@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-python
 def fibonacci_sequence(n):
     if n <= 0:
         return []
