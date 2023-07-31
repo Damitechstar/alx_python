@@ -1,0 +1,1 @@
+This repo contains all my projects under python programming in the ALX intro to SE program. 
