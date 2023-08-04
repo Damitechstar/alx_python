@@ -5,4 +5,4 @@ __name__ == "__main__"
 from variable_load_2 import a
 
 # Printing the value of the imported variable
-print("a = 89")
+print(a)
