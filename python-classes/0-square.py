@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-#This module defines the Square class and demonstrates its usage
-class Square:
+""" This module defines the Square class and demonstrates its usage """
+""" The class square represents a square shape and provides methods for calculating its area and perimeter """
+class Square: 
     def __init__(self, size):
         self.__size = size
 
