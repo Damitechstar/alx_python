@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module defines the Square class, which represents a square shape."""
+"""This module defines the Square class, which provides methods to calculate the area of the square."""
 
 class Square:
     """Represents a square shape with a given size. The size must be a non-negative integer."""
