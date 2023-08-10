@@ -28,6 +28,8 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
+        """Prints a visual representation of the square using the '#' character.
+            If the size of the square is 0, it prints an empty line."""
         if self.__size == 0:
             print()
         else:
