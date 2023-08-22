@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Contains a function to write an empty class BaseGeometry
+Defines an empty class BaseGeometry
 """
 class BaseGeometry:
     """
