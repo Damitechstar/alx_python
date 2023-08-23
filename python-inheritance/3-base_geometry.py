@@ -7,8 +7,6 @@ class BaseGeometryMetaClass(type):
         attrs = super().__dir__()  # Get the default list of attributes
         attrs = [attr for attr in attrs if attr != "__init_subclass__"]  # Exclude "__init_subclass__"
         return attrs
-
-
 class BaseGeometry(metaclass=BaseGeometryMetaClass):
     """Creates an empty class"""
     def __dir__(self):

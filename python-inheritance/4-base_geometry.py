@@ -11,3 +11,12 @@ class BaseGeometry:
         Raises: Exception with the message "area() is not implemented".
         """
         raise Exception("area() is not implemented")
+    
+class Meta(type):
+    """
+    Class to remove the __init__subclass the base geometry.
+    """
+    def __init__(cls, name, bases, attrs):
+        if name == 'BaseGeometry':
+            attrs.pop('init_subclass', None)
+        super().__init__(name, bases, attrs)
