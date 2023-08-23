@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""A custom metaclass for the BaseGeometry class."""
 class BaseGeometryMetaClass(type):
     def __dir__(cls):
         attrs = super().__dir__()  # Get the default list of attributes
