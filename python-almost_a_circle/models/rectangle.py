@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" Contains the module for the Rectangle class """
+""" Module for the Rectangle class """
 from models.base import Base
 
 class Rectangle(Base):
-    """ Class representing a Rectangle """
+    """ A class representing a Rectangle """
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         Initialize the Rectangle instance.
