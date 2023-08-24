@@ -91,3 +91,14 @@ class Rectangle(Base):
     def __str__(self):
         """ Return a string representation of the rectangle """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args, **kwargs):
+        """ Update attributes with provided arguments """
+        if args:
+            attrs = ["id", "width", "height", "x", "y"]
+            for index, arg in enumerate(args):
+                if index < len(attrs):
+                    setattr(self, attrs[index], arg)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
