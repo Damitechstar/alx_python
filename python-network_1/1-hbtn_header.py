@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-    Script use the requests and sys packages to send a request  to a given URL 
-    and display the variable value Request-Id in the response header
+    Python script that takes in a URL, sends a request to the URL and displays the value of the variable
 """
 import requests
 import sys
