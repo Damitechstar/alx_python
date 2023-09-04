@@ -20,5 +20,5 @@ if __name__ == "__main__":
             print(request_id)
             
         else:
-            print("Request failed with status code: {}".format(response.status_code)) 
+            print("Request failed with status code: {}".format(response.status_code))
             
