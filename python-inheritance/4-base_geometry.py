@@ -1,22 +1,16 @@
 #!/usr/bin/python3
-"""Defines a class BaseGeometry (based on 3-base_geometry.py). """
-class BaseGeometry:
-    """
-    Empty class representing the base geometry.
-    """
-    def area(self):
-        """
-        This method raises an Exception indicating that it's not implemented.
+"""Defines a base geometry class"""
 
-        Raises: Exception with the message "area() is not implemented".
-        """
+
+class BaseGeometry:
+    """Represents a base geometry class """
+
+    def __dir__(cls):
+        # get list of all attributes for this class and exclude_init_subclass
+        attributes = super().__dir__()
+        return [attributes for attributes in attributes if attributes != '__init_subclass__']
+
+
+    def area(self):
+        """Area not yet implemented"""
         raise Exception("area() is not implemented")
-    
-class Meta(type):
-    """
-    Class to remove the __init__subclass the base geometry.
-    """
-    def __init__(cls, name, bases, attrs):
-        if name == 'BaseGeometry':
-            attrs.pop('init_subclass', None)
-        super().__init__(name, bases, attrs)
